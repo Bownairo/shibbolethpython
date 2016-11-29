@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 es = requests.Session()
 
 sis = es.get("https://sis.rit.edu/portalServices/portal.do")
-
+        #fill in with own username and password
 payload = {'j_username': '', 'j_password': '', '_eventId_proceed': ''}
 
 login = es.post(sis.url, data = payload)
